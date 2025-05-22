@@ -30,23 +30,21 @@ environment:
 dependencies:
   cupertino_icons: ^1.0.8
   dartz: ^0.10.1
-  get: ^4.6.5
-  shared_preferences: ^2.2.2
+  firebase_core: ^3.13.1
+  firebase_messaging: ^15.2.6
+  fl_chart: ^0.66.1
   flutter:
     sdk: flutter
+  get: ^4.6.5
   http: ^1.4.0
-  pocketbase: ^0.22.0
-  fl_chart: ^0.66.1
   intl: ^0.20.2
-  table_calendar: ^3.0.9
+  pocketbase: ^0.22.0
+  shared_preferences: ^2.2.2
   shimmer: ^3.0.0
+  socket_io_client: ^3.1.2
+  table_calendar: ^3.0.9
 
 dev_dependencies:
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter

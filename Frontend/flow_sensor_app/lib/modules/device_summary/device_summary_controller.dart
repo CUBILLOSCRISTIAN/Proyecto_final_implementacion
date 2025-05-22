@@ -1,4 +1,5 @@
 import 'package:flow_sensor_app/modules/link_device/linked_device_model.dart';
+import 'package:flow_sensor_app/services/websocket_service.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import '../../services/pocketbase_service.dart';
@@ -19,6 +20,7 @@ class DeviceSummaryController extends GetxController {
   final dailySummary = <String, double>{}.obs;
 
   final _pbService = PocketbaseService();
+  final _webSocketService = WebSocketService();
 
   @override
   void onInit() {
@@ -35,8 +37,6 @@ class DeviceSummaryController extends GetxController {
 
     final flows = chartData.map((e) => e['flujo'] as double).toList();
     latestFlow.value = flows.last;
-    maxFlow.value = flows.reduce((a, b) => a > b ? a : b);
-    minFlow.value = flows.reduce((a, b) => a < b ? a : b);
     avgFlow.value = flows.reduce((a, b) => a + b) / flows.length;
   }
 
@@ -56,6 +56,33 @@ class DeviceSummaryController extends GetxController {
     } finally {
       isLoading.value = false;
     }
+  }
+
+  void _listenForUpdatesWebSockets() {
+    _webSocketService.connectToWebSocket("deviceId", (update) {
+      // Tomamos solo el último dato de las últimas 5 horas
+      if (update.last5HoursData.isNotEmpty) {
+        final lastData = update.last5HoursData.last;
+
+        final flujo = lastData.flowRate;
+        final created = lastData.createdAt;
+
+        data.value = {
+          'flow_rate': flujo,
+          'created': created,
+          'total_volume': lastData.totalVolume,
+          'sec_volume': lastData.secVolume,
+        };
+
+        chartData.add({'flujo': flujo, 'created': created});
+
+        if (chartData.length > 50) {
+          chartData.removeAt(0);
+        }
+
+        _updateStats();
+      }
+    });
   }
 
   void _listenForUpdates() {
@@ -114,7 +141,6 @@ class DeviceSummaryController extends GetxController {
 
     dailySummary.value = grouped;
   }
-
 
   @override
   void onClose() {

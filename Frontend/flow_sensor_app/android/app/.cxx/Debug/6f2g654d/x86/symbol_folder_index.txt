@@ -1,0 +1,1 @@
+/Users/cubi/development/flutter-projects/Proyecto_final_implementacion/Frontend/flow_sensor_app/build/app/intermediates/cxx/Debug/6f2g654d/obj/x86

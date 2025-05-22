@@ -1,0 +1,2 @@
+/Users/cubi/development/flutter-projects/Proyecto_final_implementacion/Frontend/flow_sensor_app/android/app/.cxx/Debug/6f2g654d/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/cubi/development/flutter-projects/Proyecto_final_implementacion/Frontend/flow_sensor_app/android/app/.cxx/Debug/6f2g654d/armeabi-v7a/CMakeFiles/rebuild_cache.dir

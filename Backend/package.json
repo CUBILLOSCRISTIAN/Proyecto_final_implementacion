@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@nestjs/microservices": "^11.1.1",
+    "firebase-admin": "^13.4.0",
+    "mqtt": "^5.13.0"
+  }
+}

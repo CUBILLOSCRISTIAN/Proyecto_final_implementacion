@@ -121,14 +121,6 @@ class DeviceSummaryView extends StatelessWidget {
             controller.latestFlow.value,
             color: Colors.blue,
           ),
-          _buildStatCard("Máximo", controller.maxFlow.value, color: Colors.red),
-          _buildStatCard(
-            "Mínimo",
-            controller.minFlow.value == double.infinity
-                ? 0.0
-                : controller.minFlow.value,
-            color: Colors.green,
-          ),
           _buildStatCard(
             "Promedio",
             controller.avgFlow.value,

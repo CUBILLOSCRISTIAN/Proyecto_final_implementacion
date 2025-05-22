@@ -1,3 +1,5 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flow_sensor_app/firebase_options.dart';
 import 'package:flow_sensor_app/modules/device_summary/device_summary_controller.dart';
 import 'package:flow_sensor_app/modules/device_summary/device_summary_view.dart';
 import 'package:flutter/material.dart';
@@ -12,6 +14,7 @@ import 'routes/app_routes.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   final prefs = await SharedPreferences.getInstance();
   final onboardingComplete = prefs.getBool('onboarding_complete') ?? false;
 
