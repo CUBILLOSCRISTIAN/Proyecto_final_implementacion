@@ -1,0 +1,19 @@
+import { Controller } from '@nestjs/common';
+import { MqttService } from './mqtt.service';
+import { Ctx, EventPattern, MqttContext, Payload } from '@nestjs/microservices';
+
+@Controller()
+export class MqttController {
+  constructor(private readonly mqttService: MqttService) {}
+
+  @EventPattern('agua/medicion')
+  async handleAnalisisTrigger(
+    @Payload() payload: any,
+    @Ctx() context: MqttContext,
+  ) {
+    const { deviceId } = payload;
+    if (!deviceId) return;
+
+    //this.mqttService.publish(`respuesta/analisis/${deviceId}`);
+  }
+}

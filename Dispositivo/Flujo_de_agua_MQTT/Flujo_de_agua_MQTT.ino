@@ -18,7 +18,7 @@ char mqtt_server[32];
 int mqtt_port;
 char* mqtt_data_topic = "agua/medicion";
 
-char* deviceId = "esp32-agua-01";
+String deviceId;
 
 char mqtt_config_topic[50];
 
@@ -79,7 +79,7 @@ void TareaSensor(void* parameter) {
 void TareaMQTT(void* parameter) {
   while (!client.connected()) {
     Serial.println("[MQTT] Conectando...");
-    if (client.connect(deviceId)) {
+    if (client.connect(deviceId.c_str())) {
       Serial.println("[MQTT] Conectado al broker");
       client.subscribe(mqtt_config_topic);
       Serial.print("[MQTT] Suscrito a: ");
@@ -208,16 +208,6 @@ void conectarWiFi() {
 
 // ------------------ Setup Configuraciones ------------------
 
-void guardarConfiguracion(String ssid, String pass, String host, int port, float factor) {
-  prefs.begin("config", false);
-  prefs.putString("wifiSSID", ssid);
-  prefs.putString("wifiPass", pass);
-  prefs.putString("mqttHost", host);
-  prefs.putInt("mqttPort", port);
-  prefs.putFloat("calFactor", factor);
-  prefs.end();
-}
-
 // void guardarConfiguracion() {
 //   prefs.begin("config", false);
 //   prefs.putString("wifiSSID", "SANYVAL");
@@ -265,6 +255,8 @@ void setup() {
   cargarConfiguracion();
 
   delay(1000);
+
+  deviceId = WiFi.macAddress();
 
   snprintf(mqtt_config_topic, sizeof(mqtt_config_topic), "agua/config/%s", deviceId);
 
