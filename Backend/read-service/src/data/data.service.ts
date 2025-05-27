@@ -15,7 +15,7 @@ export class DataService {
     return this.dataModel.findOne({ deviceId }).sort({ timestamp: -1 }).exec();
   }
 
-  async getLitersDay(
+  async getConsumoDia(
     deviceId: string,
     timestamp: Date,
   ): Promise<{
