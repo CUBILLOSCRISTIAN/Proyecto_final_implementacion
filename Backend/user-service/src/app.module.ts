@@ -1,10 +1,15 @@
 import { Module } from '@nestjs/common';
-import { UserService } from './user/user.service';
-import { UserController } from './user/user.controller';
+import { UserModule } from './user/user.module';
+import { MongooseModule } from '@nestjs/mongoose';
+import { NotificationsController } from './notifications/notifications.controller';
+import { NotificationsService } from './notifications/notifications.service';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 @Module({
-  imports: [],
-  controllers: [UserController],
-  providers: [UserService],
+  imports: [MongooseModule.forRoot(process.env.MONGO_URI!), UserModule],
+  controllers: [NotificationsController],
+  providers: [NotificationsService],
 })
-export class AppModule { }
+export class AppModule {}
