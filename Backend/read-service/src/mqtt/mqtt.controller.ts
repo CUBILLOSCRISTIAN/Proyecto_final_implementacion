@@ -11,9 +11,11 @@ export class MqttController {
     @Payload() payload: any,
     @Ctx() context: MqttContext,
   ) {
-    const { deviceId } = payload;
-    if (!deviceId) return;
+    const { deviceId, timestamp } = payload;
+    if (!deviceId || !timestamp) return;
 
-    //this.mqttService.publish(`respuesta/analisis/${deviceId}`);
+    const dateTimestamp = new Date(timestamp);
+
+    await this.mqttService.publishLiveData(deviceId, dateTimestamp);
   }
 }
