@@ -209,7 +209,6 @@ export class DataService {
       },
     });
 
-    // Inicializar mapa de fechas con 0
     const consumoPorDia = new Map<string, number>();
     for (let i = 0; i < 7; i++) {
       const d = new Date(startDate);
@@ -218,7 +217,6 @@ export class DataService {
       consumoPorDia.set(key, 0);
     }
 
-    // Acumular litros por día
     registros.forEach((reg) => {
       const fecha = new Date(reg.timestamp).toISOString().split('T')[0];
       if (consumoPorDia.has(fecha)) {
@@ -226,7 +224,6 @@ export class DataService {
       }
     });
 
-    // Formatear resultado
     const resultado = Array.from(consumoPorDia.entries()).map(
       ([fecha, litros]) => ({
         fecha,

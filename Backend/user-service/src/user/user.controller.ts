@@ -10,7 +10,7 @@ export class UserController {
   private readonly logger = new Logger(UserController.name);
   constructor(private readonly userService: UserService) {}
 
-  @EventPattern('user/create')
+  @EventPattern('user/register')
   async handleCreateUser(@Payload() payload: any, @Ctx() context: MqttContext) {
     try {
       const user = plainToInstance(UserDto, payload);
@@ -20,7 +20,7 @@ export class UserController {
       });
 
       if (errors.length > 0) {
-        this.logger.warn(`Invalid config received: ${JSON.stringify(errors)}`);
+        this.logger.warn(`Invalid user received: ${JSON.stringify(errors)}`);
         return;
       }
 

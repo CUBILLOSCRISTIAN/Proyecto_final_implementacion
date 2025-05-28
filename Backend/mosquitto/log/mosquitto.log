@@ -1,0 +1,257 @@
+1748441048: mosquitto version 2.0.21 starting
+1748441048: Config loaded from /mosquitto/config/mosquitto.conf.
+1748441048: Opening ipv4 listen socket on port 1883.
+1748441048: Opening ipv6 listen socket on port 1883.
+1748441048: mosquitto version 2.0.21 running
+1748441061: New connection from 172.18.0.1:52628 on port 1883.
+1748441061: New client connected from 172.18.0.1:52628 as mqtt-explorer-618c3dc5 (p2, c1, k60).
+1748441319: New connection from 172.18.0.1:34862 on port 1883.
+1748441319: New client connected from 172.18.0.1:34862 as mqttjs_8a0b9cba (p2, c1, k60).
+1748441381: Client mqttjs_8a0b9cba closed its connection.
+1748441387: New connection from 172.18.0.1:46424 on port 1883.
+1748441387: New client connected from 172.18.0.1:46424 as mqttjs_30357c46 (p2, c1, k60).
+1748441714: Client mqttjs_30357c46 closed its connection.
+1748441726: New connection from 172.18.0.1:58300 on port 1883.
+1748441726: New client connected from 172.18.0.1:58300 as mqttjs_e4173415 (p2, c1, k60).
+1748441819: Client mqttjs_e4173415 closed its connection.
+1748441824: New connection from 172.18.0.1:35076 on port 1883.
+1748441824: New client connected from 172.18.0.1:35076 as mqttjs_1bdaf159 (p2, c1, k60).
+1748441830: Client mqttjs_1bdaf159 closed its connection.
+1748441845: New connection from 172.18.0.1:46550 on port 1883.
+1748441845: New client connected from 172.18.0.1:46550 as mqttjs_7a37b092 (p2, c1, k60).
+1748441867: Client mqttjs_7a37b092 closed its connection.
+1748441872: New connection from 172.18.0.1:36434 on port 1883.
+1748441872: New client connected from 172.18.0.1:36434 as mqttjs_b6f899a5 (p2, c1, k60).
+1748441873: Client mqttjs_b6f899a5 closed its connection.
+1748441879: New connection from 172.18.0.1:44808 on port 1883.
+1748441879: New client connected from 172.18.0.1:44808 as mqttjs_8459a7ac (p2, c1, k60).
+1748441909: Client mqttjs_8459a7ac closed its connection.
+1748441914: New connection from 172.18.0.1:56034 on port 1883.
+1748441914: New client connected from 172.18.0.1:56034 as mqttjs_1c8e011f (p2, c1, k60).
+1748441919: Client mqttjs_1c8e011f closed its connection.
+1748441924: New connection from 172.18.0.1:36150 on port 1883.
+1748441924: New client connected from 172.18.0.1:36150 as mqttjs_8586704d (p2, c1, k60).
+1748441970: Client mqttjs_8586704d closed its connection.
+1748441975: New connection from 172.18.0.1:41638 on port 1883.
+1748441975: New client connected from 172.18.0.1:41638 as mqttjs_3220365a (p2, c1, k60).
+1748442021: Client mqttjs_3220365a closed its connection.
+1748442027: New connection from 172.18.0.1:38362 on port 1883.
+1748442027: New client connected from 172.18.0.1:38362 as mqttjs_a0fed435 (p2, c1, k60).
+1748442090: Client mqttjs_a0fed435 closed its connection.
+1748442094: New connection from 172.18.0.1:36090 on port 1883.
+1748442094: New client connected from 172.18.0.1:36090 as mqttjs_84956b56 (p2, c1, k60).
+1748442177: Client mqttjs_84956b56 closed its connection.
+1748442182: New connection from 172.18.0.1:41938 on port 1883.
+1748442182: New client connected from 172.18.0.1:41938 as mqttjs_a56bb918 (p2, c1, k60).
+1748442195: Client mqttjs_a56bb918 closed its connection.
+1748442200: New connection from 172.18.0.1:53776 on port 1883.
+1748442200: New client connected from 172.18.0.1:53776 as mqttjs_dc884bcd (p2, c1, k60).
+1748442295: Client mqttjs_dc884bcd closed its connection.
+1748442312: New connection from 172.18.0.1:49288 on port 1883.
+1748442312: New client connected from 172.18.0.1:49288 as mqttjs_afe13bd7 (p2, c1, k60).
+1748442341: Client mqttjs_afe13bd7 closed its connection.
+1748442357: New connection from 172.18.0.1:55660 on port 1883.
+1748442357: New client connected from 172.18.0.1:55660 as mqttjs_bf6d1671 (p2, c1, k60).
+1748442361: Client mqttjs_bf6d1671 closed its connection.
+1748442383: New connection from 172.18.0.1:52076 on port 1883.
+1748442383: New client connected from 172.18.0.1:52076 as mqttjs_347211ba (p2, c1, k60).
+1748442384: Client mqttjs_347211ba closed its connection.
+1748442391: New connection from 172.18.0.1:45726 on port 1883.
+1748442391: New client connected from 172.18.0.1:45726 as mqttjs_1ecaaeeb (p2, c1, k60).
+1748442684: Client mqttjs_1ecaaeeb closed its connection.
+1748442700: New connection from 172.18.0.1:44164 on port 1883.
+1748442700: New client connected from 172.18.0.1:44164 as mqttjs_23b2ac66 (p2, c1, k60).
+1748442704: Client mqttjs_23b2ac66 closed its connection.
+1748442711: New connection from 172.18.0.1:49648 on port 1883.
+1748442711: New client connected from 172.18.0.1:49648 as mqttjs_9625e366 (p2, c1, k60).
+1748442714: Client mqttjs_9625e366 closed its connection.
+1748442736: New connection from 172.18.0.1:54692 on port 1883.
+1748442736: New client connected from 172.18.0.1:54692 as mqttjs_25e6c654 (p2, c1, k60).
+1748442749: Client mqttjs_25e6c654 closed its connection.
+1748442768: New connection from 172.18.0.1:59850 on port 1883.
+1748442768: New client connected from 172.18.0.1:59850 as mqttjs_3bc7c59c (p2, c1, k60).
+1748442784: Client mqttjs_3bc7c59c closed its connection.
+1748442796: New connection from 172.18.0.1:49116 on port 1883.
+1748442796: New client connected from 172.18.0.1:49116 as mqttjs_f8bcf9e1 (p2, c1, k60).
+1748442816: Client mqttjs_f8bcf9e1 closed its connection.
+1748442832: New connection from 172.18.0.1:38074 on port 1883.
+1748442832: New client connected from 172.18.0.1:38074 as mqttjs_f1169293 (p2, c1, k60).
+1748442836: Client mqttjs_f1169293 closed its connection.
+1748442849: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1748442857: New connection from 172.18.0.1:41216 on port 1883.
+1748442857: New client connected from 172.18.0.1:41216 as mqttjs_22f0ef20 (p2, c1, k60).
+1748442979: Client mqttjs_22f0ef20 closed its connection.
+1748443035: New connection from 172.18.0.1:43288 on port 1883.
+1748443035: New client connected from 172.18.0.1:43288 as mqttjs_92ad006c (p2, c1, k60).
+1748443037: Client mqttjs_92ad006c closed its connection.
+1748443048: New connection from 172.18.0.1:44778 on port 1883.
+1748443048: New client connected from 172.18.0.1:44778 as mqttjs_5c8413f0 (p2, c1, k60).
+1748443309: Client mqttjs_5c8413f0 closed its connection.
+1748443315: New connection from 172.18.0.1:53024 on port 1883.
+1748443315: New client connected from 172.18.0.1:53024 as mqttjs_563bced7 (p2, c1, k60).
+1748443318: Client mqttjs_563bced7 closed its connection.
+1748443324: New connection from 172.18.0.1:49724 on port 1883.
+1748443324: New client connected from 172.18.0.1:49724 as mqttjs_7a05abc5 (p2, c1, k60).
+1748443324: Client mqttjs_7a05abc5 closed its connection.
+1748443331: New connection from 172.18.0.1:39362 on port 1883.
+1748443331: New client connected from 172.18.0.1:39362 as mqttjs_986cb76b (p2, c1, k60).
+1748443351: Client mqttjs_986cb76b closed its connection.
+1748443361: New connection from 172.18.0.1:44368 on port 1883.
+1748443361: New client connected from 172.18.0.1:44368 as mqttjs_757df54a (p2, c1, k60).
+1748443367: Client mqttjs_757df54a closed its connection.
+1748443373: New connection from 172.18.0.1:48308 on port 1883.
+1748443373: New client connected from 172.18.0.1:48308 as mqttjs_aa87eefc (p2, c1, k60).
+1748443465: Client mqttjs_aa87eefc closed its connection.
+1748443491: New connection from 172.18.0.1:56554 on port 1883.
+1748443491: New client connected from 172.18.0.1:56554 as mqttjs_6d42427d (p2, c1, k60).
+1748443500: Client mqttjs_6d42427d closed its connection.
+1748443607: New connection from 172.18.0.1:44274 on port 1883.
+1748443607: New client connected from 172.18.0.1:44274 as mqttjs_086dfc69 (p2, c1, k60).
+1748443611: Client mqttjs_086dfc69 closed its connection.
+1748443620: New connection from 172.18.0.1:55568 on port 1883.
+1748443620: New client connected from 172.18.0.1:55568 as mqttjs_23caba7a (p2, c1, k60).
+1748443635: Client mqttjs_23caba7a closed its connection.
+1748443700: New connection from 172.18.0.1:57718 on port 1883.
+1748443700: New client connected from 172.18.0.1:57718 as mqttjs_c0cf4a60 (p2, c1, k60).
+1748443721: Client mqttjs_c0cf4a60 closed its connection.
+1748443727: New connection from 172.18.0.1:52964 on port 1883.
+1748443727: New client connected from 172.18.0.1:52964 as mqttjs_b16036ca (p2, c1, k60).
+1748443756: Client mqttjs_b16036ca closed its connection.
+1748443774: New connection from 172.18.0.1:47036 on port 1883.
+1748443774: New client connected from 172.18.0.1:47036 as mqttjs_d9f1436a (p2, c1, k60).
+1748443776: Client mqttjs_d9f1436a closed its connection.
+1748443786: New connection from 172.18.0.1:37740 on port 1883.
+1748443786: New client connected from 172.18.0.1:37740 as mqttjs_d7b02b8e (p2, c1, k60).
+1748443786: Empty subscription string from 172.18.0.1, disconnecting.
+1748443786: Client mqttjs_d7b02b8e disconnected due to malformed packet.
+1748443787: New connection from 172.18.0.1:58802 on port 1883.
+1748443787: New client connected from 172.18.0.1:58802 as mqttjs_d7b02b8e (p2, c1, k60).
+1748443787: Empty subscription string from 172.18.0.1, disconnecting.
+1748443787: Client mqttjs_d7b02b8e disconnected due to malformed packet.
+1748443788: New connection from 172.18.0.1:58814 on port 1883.
+1748443788: New client connected from 172.18.0.1:58814 as mqttjs_d7b02b8e (p2, c1, k60).
+1748443788: Empty subscription string from 172.18.0.1, disconnecting.
+1748443788: Client mqttjs_d7b02b8e disconnected due to malformed packet.
+1748443789: New connection from 172.18.0.1:58816 on port 1883.
+1748443789: New client connected from 172.18.0.1:58816 as mqttjs_d7b02b8e (p2, c1, k60).
+1748443789: Empty subscription string from 172.18.0.1, disconnecting.
+1748443789: Client mqttjs_d7b02b8e disconnected due to malformed packet.
+1748443790: New connection from 172.18.0.1:58826 on port 1883.
+1748443790: New client connected from 172.18.0.1:58826 as mqttjs_d7b02b8e (p2, c1, k60).
+1748443790: Empty subscription string from 172.18.0.1, disconnecting.
+1748443790: Client mqttjs_d7b02b8e disconnected due to malformed packet.
+1748443792: New connection from 172.18.0.1:58842 on port 1883.
+1748443792: New client connected from 172.18.0.1:58842 as mqttjs_d7b02b8e (p2, c1, k60).
+1748443792: Empty subscription string from 172.18.0.1, disconnecting.
+1748443792: Client mqttjs_d7b02b8e disconnected due to malformed packet.
+1748443793: New connection from 172.18.0.1:58858 on port 1883.
+1748443793: New client connected from 172.18.0.1:58858 as mqttjs_d7b02b8e (p2, c1, k60).
+1748443793: Empty subscription string from 172.18.0.1, disconnecting.
+1748443793: Client mqttjs_d7b02b8e disconnected due to malformed packet.
+1748443794: New connection from 172.18.0.1:58866 on port 1883.
+1748443794: New client connected from 172.18.0.1:58866 as mqttjs_d7b02b8e (p2, c1, k60).
+1748443794: Empty subscription string from 172.18.0.1, disconnecting.
+1748443794: Client mqttjs_d7b02b8e disconnected due to malformed packet.
+1748443795: New connection from 172.18.0.1:58882 on port 1883.
+1748443795: New client connected from 172.18.0.1:58882 as mqttjs_d7b02b8e (p2, c1, k60).
+1748443795: Empty subscription string from 172.18.0.1, disconnecting.
+1748443795: Client mqttjs_d7b02b8e disconnected due to malformed packet.
+1748443796: New connection from 172.18.0.1:58886 on port 1883.
+1748443796: New client connected from 172.18.0.1:58886 as mqttjs_d7b02b8e (p2, c1, k60).
+1748443796: Empty subscription string from 172.18.0.1, disconnecting.
+1748443796: Client mqttjs_d7b02b8e disconnected due to malformed packet.
+1748443797: New connection from 172.18.0.1:60558 on port 1883.
+1748443797: New client connected from 172.18.0.1:60558 as mqttjs_d7b02b8e (p2, c1, k60).
+1748443797: Client mqttjs_d7b02b8e closed its connection.
+1748443804: New connection from 172.18.0.1:60566 on port 1883.
+1748443804: New client connected from 172.18.0.1:60566 as mqttjs_5929d3dd (p2, c1, k60).
+1748443913: Client mqttjs_5929d3dd closed its connection.
+1748444376: New connection from 172.18.0.1:60438 on port 1883.
+1748444376: New client connected from 172.18.0.1:60438 as mqttjs_2a5d83db (p2, c1, k60).
+1748444622: Client mqttjs_2a5d83db closed its connection.
+1748444634: New connection from 172.18.0.1:52702 on port 1883.
+1748444634: New client connected from 172.18.0.1:52702 as mqttjs_b1525304 (p2, c1, k60).
+1748444636: Client mqttjs_b1525304 closed its connection.
+1748444642: New connection from 172.18.0.1:33336 on port 1883.
+1748444642: New client connected from 172.18.0.1:33336 as mqttjs_a82f9014 (p2, c1, k60).
+1748444645: Client mqttjs_a82f9014 closed its connection.
+1748444650: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1748444652: New connection from 172.18.0.1:37606 on port 1883.
+1748444652: New client connected from 172.18.0.1:37606 as mqttjs_2fa26a65 (p2, c1, k60).
+1748445239: Client mqttjs_2fa26a65 closed its connection.
+1748445265: New connection from 172.18.0.1:44472 on port 1883.
+1748445265: New client connected from 172.18.0.1:44472 as mqttjs_17042ea9 (p2, c1, k60).
+1748445332: Client mqttjs_17042ea9 closed its connection.
+1748445337: New connection from 172.18.0.1:39102 on port 1883.
+1748445337: New client connected from 172.18.0.1:39102 as mqttjs_f89cc58f (p2, c1, k60).
+1748445337: Client mqttjs_f89cc58f closed its connection.
+1748445364: New connection from 172.18.0.1:39898 on port 1883.
+1748445364: New client connected from 172.18.0.1:39898 as mqttjs_a88c8e54 (p2, c1, k60).
+1748445392: Client mqttjs_a88c8e54 closed its connection.
+1748445397: New connection from 172.18.0.1:41342 on port 1883.
+1748445397: New client connected from 172.18.0.1:41342 as mqttjs_c2085cd7 (p2, c1, k60).
+1748445423: Client mqttjs_c2085cd7 closed its connection.
+1748445434: New connection from 172.18.0.1:54096 on port 1883.
+1748445434: New client connected from 172.18.0.1:54096 as mqttjs_9374d971 (p2, c1, k60).
+1748445441: Client mqttjs_9374d971 closed its connection.
+1748445446: New connection from 172.18.0.1:51068 on port 1883.
+1748445446: New client connected from 172.18.0.1:51068 as mqttjs_5e2e8a2c (p2, c1, k60).
+1748445463: Client mqttjs_5e2e8a2c closed its connection.
+1748445470: New connection from 172.18.0.1:35364 on port 1883.
+1748445470: New client connected from 172.18.0.1:35364 as mqttjs_3819ee1e (p2, c1, k60).
+1748445485: Client mqttjs_3819ee1e closed its connection.
+1748445490: New connection from 172.18.0.1:57068 on port 1883.
+1748445490: New client connected from 172.18.0.1:57068 as mqttjs_c11c6604 (p2, c1, k60).
+1748445516: Client mqttjs_c11c6604 closed its connection.
+1748445521: New connection from 172.18.0.1:52918 on port 1883.
+1748445521: New client connected from 172.18.0.1:52918 as mqttjs_8fd6516d (p2, c1, k60).
+1748445522: Client mqttjs_8fd6516d closed its connection.
+1748445530: New connection from 172.18.0.1:46066 on port 1883.
+1748445530: New client connected from 172.18.0.1:46066 as mqttjs_5b4d2059 (p2, c1, k60).
+1748445536: Client mqttjs_5b4d2059 closed its connection.
+1748445540: New connection from 172.18.0.1:50848 on port 1883.
+1748445540: New client connected from 172.18.0.1:50848 as mqttjs_988d8dc5 (p2, c1, k60).
+1748445542: Client mqttjs_988d8dc5 closed its connection.
+1748445546: New connection from 172.18.0.1:55440 on port 1883.
+1748445546: New client connected from 172.18.0.1:55440 as mqttjs_21a84fa3 (p2, c1, k60).
+1748445549: Client mqttjs_21a84fa3 closed its connection.
+1748445554: New connection from 172.18.0.1:55442 on port 1883.
+1748445554: New client connected from 172.18.0.1:55442 as mqttjs_0556ef61 (p2, c1, k60).
+1748445555: Client mqttjs_0556ef61 closed its connection.
+1748445559: New connection from 172.18.0.1:41654 on port 1883.
+1748445559: New client connected from 172.18.0.1:41654 as mqttjs_11d0c243 (p2, c1, k60).
+1748445572: Client mqttjs_11d0c243 closed its connection.
+1748445580: New connection from 172.18.0.1:44090 on port 1883.
+1748445580: New client connected from 172.18.0.1:44090 as mqttjs_447b04f3 (p2, c1, k60).
+1748445581: Client mqttjs_447b04f3 closed its connection.
+1748445586: New connection from 172.18.0.1:44104 on port 1883.
+1748445586: New client connected from 172.18.0.1:44104 as mqttjs_d9a1a37c (p2, c1, k60).
+1748445623: Client mqttjs_d9a1a37c closed its connection.
+1748445642: New connection from 172.18.0.1:51156 on port 1883.
+1748445642: New client connected from 172.18.0.1:51156 as mqttjs_11f4182a (p2, c1, k60).
+1748445732: Client mqttjs_11f4182a closed its connection.
+1748445737: New connection from 172.18.0.1:54448 on port 1883.
+1748445737: New client connected from 172.18.0.1:54448 as mqttjs_0ce3cae7 (p2, c1, k60).
+1748445949: Client mqttjs_0ce3cae7 closed its connection.
+1748445997: New connection from 172.18.0.1:46876 on port 1883.
+1748445997: New client connected from 172.18.0.1:46876 as mqttjs_455fe8ed (p2, c1, k60).
+1748446009: Client mqttjs_455fe8ed closed its connection.
+1748446015: New connection from 172.18.0.1:43686 on port 1883.
+1748446015: New client connected from 172.18.0.1:43686 as mqttjs_1143b4f1 (p2, c1, k60).
+1748446048: Client mqttjs_1143b4f1 closed its connection.
+1748446079: New connection from 172.18.0.1:56002 on port 1883.
+1748446079: New client connected from 172.18.0.1:56002 as mqttjs_b43e2cbd (p2, c1, k60).
+1748446102: Client mqttjs_b43e2cbd closed its connection.
+1748446128: New connection from 172.18.0.1:54718 on port 1883.
+1748446128: New client connected from 172.18.0.1:54718 as mqttjs_ee4074a0 (p2, c1, k60).
+1748446136: Client mqttjs_ee4074a0 closed its connection.
+1748446149: New connection from 172.18.0.1:32820 on port 1883.
+1748446149: New client connected from 172.18.0.1:32820 as mqttjs_9b7dd93f (p2, c1, k60).
+1748446333: Client mqttjs_9b7dd93f closed its connection.
+1748446340: New connection from 172.18.0.1:39074 on port 1883.
+1748446340: New client connected from 172.18.0.1:39074 as mqttjs_748634a4 (p2, c1, k60).
+1748446345: Client mqttjs_748634a4 closed its connection.
+1748446351: New connection from 172.18.0.1:42306 on port 1883.
+1748446351: New client connected from 172.18.0.1:42306 as mqttjs_6e3aa7a0 (p2, c1, k60).
+1748446451: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1748446918: Client mqttjs_6e3aa7a0 closed its connection.
