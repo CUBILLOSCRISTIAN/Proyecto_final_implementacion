@@ -1,6 +1,19 @@
 version: '3.8'
 
 services:
+  traefik:
+    image: traefik:v2.11
+    container_name: traefik
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - "80:80"
+      - "8080:8080" # Traefik dashboard
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
   mqtt-broker:
     image: eclipse-mosquitto:2.0
     container_name: mqtt-broker
@@ -12,3 +25,27 @@ services:
       - ./mosquitto/config:/mosquitto/config
       - ./mosquitto/data:/mosquitto/data
       - ./mosquitto/log:/mosquitto/log
+
+  config-service:
+    build: ./config-service
+    env_file: ./config-service/.env
+    restart: always
+    labels:
+      - "traefik.http.routers.config.rule=PathPrefix(`/config`)"
+      - "traefik.http.services.config.loadbalancer.server.port=3010"
+
+  read-service:
+    build: ./read-service
+    env_file: ./read-service/.env
+    restart: always
+    labels:
+      - "traefik.http.routers.read.rule=PathPrefix(`/read`)"
+      - "traefik.http.services.read.loadbalancer.server.port=3011"
+
+  storage-service:
+    build: ./storage-service
+    env_file: ./storage-service/.env
+    restart: always
+    labels:
+      - "traefik.http.routers.storage.rule=PathPrefix(`/storage`)"
+      - "traefik.http.services.storage.loadbalancer.server.port=3012"
