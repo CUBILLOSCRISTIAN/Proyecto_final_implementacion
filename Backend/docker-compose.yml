@@ -31,6 +31,7 @@ services:
     env_file: ./config-service/.env
     restart: always
     labels:
+      - "traefik.enable=true"
       - "traefik.http.routers.config.rule=PathPrefix(`/config`)"
       - "traefik.http.services.config.loadbalancer.server.port=3010"
 
@@ -39,6 +40,7 @@ services:
     env_file: ./read-service/.env
     restart: always
     labels:
+      - "traefik.enable=true"
       - "traefik.http.routers.read.rule=PathPrefix(`/read`)"
       - "traefik.http.services.read.loadbalancer.server.port=3011"
 
@@ -47,5 +49,6 @@ services:
     env_file: ./storage-service/.env
     restart: always
     labels:
+      - "traefik.enable=true"
       - "traefik.http.routers.storage.rule=PathPrefix(`/storage`)"
       - "traefik.http.services.storage.loadbalancer.server.port=3012"
