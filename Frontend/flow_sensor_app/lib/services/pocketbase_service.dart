@@ -60,13 +60,17 @@ class PocketbaseService {
   }
 
   Future<List<RecordModel>> getAllMeasurementsBySerial(String serial) async {
+    final sevenDaysAgo =
+        DateTime.now().subtract(Duration(days: 7)).toIso8601String();
+
     final result = await pb
         .collection('Measurement')
         .getFullList(
-          batch: 200, // ajusta según cantidad de datos
-          filter: 'device_id="$serial"',
+          batch: 200,
+          filter: 'device_id="$serial" && timestamp>="$sevenDaysAgo"',
           sort: '+timestamp',
         );
+
     return result;
   }
 }

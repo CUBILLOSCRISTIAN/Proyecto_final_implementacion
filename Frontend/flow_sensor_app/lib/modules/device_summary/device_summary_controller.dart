@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flow_sensor_app/modules/link_device/linked_device_model.dart';
 import 'package:flow_sensor_app/services/websocket_service.dart';
 import 'package:get/get.dart';
@@ -19,6 +21,9 @@ class DeviceSummaryController extends GetxController {
 
   final dailySummary = <String, double>{}.obs;
 
+  final lastUpdate = DateTime.now().obs;
+  Timer? _inactivityTimer;
+
   final _pbService = PocketbaseService();
   final _webSocketService = WebSocketService();
 
@@ -26,6 +31,7 @@ class DeviceSummaryController extends GetxController {
   void onInit() {
     super.onInit();
     device = Get.arguments as LinkedDevice;
+    _startInactivityMonitor();
     _loadInitialData();
     generateDailySummary();
     loadHistoricalData();
@@ -89,7 +95,7 @@ class DeviceSummaryController extends GetxController {
     _pbService.subscribeToDevice(device.id ?? device.serial, (record) {
       final flujo = double.tryParse(record.data['flow_rate'].toString()) ?? 0.0;
       final created =
-          DateTime.tryParse(record.data['created']) ?? DateTime.now();
+          DateTime.tryParse(record.data['timestamp']) ?? DateTime.now();
 
       data.value = record.data;
       chartData.add({'flujo': flujo, 'created': created});
@@ -97,7 +103,22 @@ class DeviceSummaryController extends GetxController {
       if (chartData.length > 50) {
         chartData.removeAt(0);
       }
+      lastUpdate.value = DateTime.now();
       _updateStats();
+    });
+  }
+
+  void _startInactivityMonitor() {
+    _inactivityTimer?.cancel();
+    _inactivityTimer = Timer.periodic(Duration(seconds: 10), (_) {
+      final now = DateTime.now();
+      final diff = now.difference(lastUpdate.value).inSeconds;
+
+      if (diff > 30) {
+        // Si han pasado más de 30 segundos sin datos nuevos, se puede hacer algo:
+        latestFlow.value = 0.0;
+        // También puedes mostrar un mensaje en la UI con un nuevo observable, como `isInactive.value = true`.
+      }
     });
   }
 
@@ -136,7 +157,7 @@ class DeviceSummaryController extends GetxController {
       final createdDate = DateTime.tryParse(createdStr) ?? DateTime.now();
       final date = DateFormat('yyyy-MM-dd').format(createdDate);
       final value = double.tryParse(record.data['flow_rate'].toString()) ?? 0.0;
-      grouped[date] = (grouped[date] ?? 0) + value;
+      grouped[date] = ((grouped[date] ?? 0) + value) / 1000; // Conversión a m³
     }
 
     dailySummary.value = grouped;
@@ -145,6 +166,7 @@ class DeviceSummaryController extends GetxController {
   @override
   void onClose() {
     _pbService.unsubscribeAll();
+    _inactivityTimer?.cancel();
     super.onClose();
   }
 }

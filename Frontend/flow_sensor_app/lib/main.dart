@@ -5,6 +5,7 @@ import 'package:flow_sensor_app/modules/device_summary/device_summary_view.dart'
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
 import 'modules/welcome/welcome_view.dart';
 import 'modules/welcome/welcome_controller.dart';
@@ -15,6 +16,7 @@ import 'routes/app_routes.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await initializeDateFormatting('es_ES', null);
   final prefs = await SharedPreferences.getInstance();
   final onboardingComplete = prefs.getBool('onboarding_complete') ?? false;
 

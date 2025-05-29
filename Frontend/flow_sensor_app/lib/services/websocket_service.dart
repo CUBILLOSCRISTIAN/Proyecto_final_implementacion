@@ -10,7 +10,6 @@ class WebSocketService {
     // Configuración del socket
     print("deviceId: $deviceId");
 
-    ;
     socket = IO.io(
       'http://135.234.192.12:80',
       IO.OptionBuilder()
