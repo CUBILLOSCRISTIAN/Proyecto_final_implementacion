@@ -1,18 +1,14 @@
 version: '3.8'
 
 services:
-  traefik:
-    image: traefik:v2.11
-    container_name: traefik
-    command:
-      - "--api.insecure=true"
-      - "--providers.docker=true"
-      - "--entrypoints.web.address=:80"
+  
+  api-gateway:
+    build: ./api-gateway
+    env_file: ./api-gateway/.env
     ports:
-      - "80:80"
-      - "8080:8080" # Traefik dashboard
-    volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "3000:3000"
+    restart: always
+
 
   mqtt-broker:
     image: eclipse-mosquitto:2.0
@@ -30,25 +26,18 @@ services:
     build: ./config-service
     env_file: ./config-service/.env
     restart: always
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.config.rule=PathPrefix(`/config`)"
-      - "traefik.http.services.config.loadbalancer.server.port=3010"
 
   read-service:
     build: ./read-service
     env_file: ./read-service/.env
     restart: always
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.read.rule=PathPrefix(`/read`)"
-      - "traefik.http.services.read.loadbalancer.server.port=3011"
 
   storage-service:
     build: ./storage-service
     env_file: ./storage-service/.env
     restart: always
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.storage.rule=PathPrefix(`/storage`)"
-      - "traefik.http.services.storage.loadbalancer.server.port=3012"
+  
+  user-service:
+    build: ./user-service
+    env_file: ./user-service/.env
+    restart: always
